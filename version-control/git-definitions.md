@@ -13,3 +13,4 @@ A commit is an edit to a document or file. It is a way to place text from code d
 
 * What is a merge conflict?
 A merge conflict is the message that git sends when you try to merge multiple branches. You will be prompted to fix the conflict then try to remerge the branches.
+hi
