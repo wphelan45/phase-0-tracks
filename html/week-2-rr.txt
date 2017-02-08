@@ -1,0 +1,28 @@
+Week 2 R&R
+1. The browser is the vessel that retrieves information for web pages. You can observe this by opening a web page and clicking on the view option and scroll down to the developer choice and choose the Developer Tools to see the code and actions happening behind the curtain.
+	-Client: The computer that is connected to the internet and can send and receive information.
+	-Server: Stores information so that it can be accessed by clients. Can be accessed remotely.
+	-Render: Creating images or websites by translating information from a server to a client.
+
+2. Html translates computer’s language to human language and displays the human language on a website.
+	-Tag: A tag contains the content and describes what and where that content is supposed to begin and end.
+	-Element: Designates the type of content that can be put on a page.
+	-Node: In HTML the document is a node and including every element, tag and etc.
+	-Attribute: Are used to configure elements or change the behavior of elements to fit the coder’s display needs.
+	-Block Element: Occupies the entire space of its parent container. This creates a block in a line(s) of code.
+	-Inline Element: Only occupies the space between tags inside a line of code.
+
+3.
+	-Head: Provides metadata about the document in the tabs on a webpage.
+	-Body: Represents the general content on an open webpage.
+	-P: Contains text that can be one word or a whole essay.
+	-Form: Allows the user to enter information into the webpage.
+	-Div: Creates a block container for a section of a webpage. Is not physically represented on the webpage.
+	-Span: Creates an inline container that is used for styling purposes. Is not physically represented on the webpage.
+	-Select: Block element that provides a menu of options.
+	-H2: Inline element that styles a paragraph header the 2nd biggest font size.
+	-Ol: Ordered list. Block element that makes a numbered list on a webpage.
+	-Ul: Unordered list. Block element that makes a list of bullet points on a webpage.
+	-Table: Block element that creates a table.
+	-Tr: Table row. Block element that creates one row of a table filled with data.
+	-Td: Table column. Block element that creates one column of a table filled with data.
