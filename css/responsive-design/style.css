@@ -4,6 +4,23 @@ blockquote {
   margin-left: 0px;
 }
 
+body {
+  max-width: 960px;
+  vertical-align: middle;
+}
+
+section#external-links {
+  width: 20%;
+  min-width: 167px;
+  float: left;
+  vertical-align: top;
+}
+
+main {
+  display: inline-block;
+  width: 50%;
+}
+
 cite {
   display: block;
   margin-top: 10px;
@@ -30,3 +47,21 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+/* @media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+} */
+
+@media screen and (max-width: 500px) {
+  h1, a {
+    font-size: .8em;
+  }
+} 
+
+@media screen and (max-width: 500px) {
+  img {
+    display: none;
+  }
+} 
