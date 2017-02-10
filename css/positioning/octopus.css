@@ -1,0 +1,25 @@
+.octopus {
+	position: relative;
+}
+
+#position-1 {
+	position: absolute;
+	top: 200px;
+	left: 350px;
+	z-index: 1;
+}
+
+#position-2 {
+	z-index: 2;
+	position: absolute;
+	top: 135px;
+	left: 330px;
+
+}
+
+#position-3 {
+	top: 300px;
+	left: 390px;
+	z-index: 3;
+	position: absolute;
+}
