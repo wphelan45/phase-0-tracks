@@ -1,0 +1,11 @@
+1. There are many types of CSS adjustments. First, it is possible to change the borders of a webpage using adjustments like margin. Then, we can adjust the font by using properties like font-adjusts, font-size and etc. Last, I have used the table adjustment to create stylish tables for displaying information.
+
+2. The three ways to link a CSS style sheet to a HTML sheet is external link, internal link and inline styling. External sheets are separate documents that are linked via the <link> tag. Then, internal linking is done using the <style> tag followed by CSS adjustments. Lastly, inline styling is done using a tag like <center> then the subsequent HTML tags will be affected by its parent tag. Ex: <center> <h1></h1> </center>.
+
+3. The different types of selectors are: id, class, elements, *, and many more. I have listed the most common selectors we have been using on assignments.
+
+4. The box model refers to the combination of margins, borders, padding and HTML content. These “boxes” combine to create a nest for the website’s content.
+
+5. The cascading effect of CSS refers to the way styling code effects all the elements of HTML code depending on the specificity of the CSS code. The code will look for specific adjustments and might override the general adjustments.
+
+6. Two techniques that assist with responsive design are CSS transitions and media queries. 
