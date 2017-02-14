@@ -1,0 +1,26 @@
+Robot using an Elevator
+- While stading in front of the double sliding doors wait for the sound "Ding!" and for the doors to open.
+- Once the doors open walk inside, turn 180 degrees and locate the floor buttons.
+	-Check the right panel for numbers or words in circular buttons.
+	-If the buttons are not on the right panel look at left panel for numbers or words in circular buttons.
+- Look at the bottom of the rows of buttons and locate the button with the words "Door Close."
+- Press "Door Close" to close the elevator doors
+- Press the button of the floor you have been instructed to go to, lets say floor 3.
+- Locate the button with the number 3, it's near "Door Close."
+
+Morning Routine
+- Sleep for 7-8 hours
+- When your first alarm goes off, snooze it without opening your eyes
+	- Repeat until you're ready to wake up
+- Once you wake up get out of bed and walk down the hall into the bathroom
+- Start the shower and put toothpaste on your toothbrush
+- Get into the shower and brush your teeth while rinsing your hair
+- Once you have showered, floss and comb your hair
+- Go back to your room and get dressed
+	- Put on a pair of pants
+	- Select a shirt that matches your pants and repeat until you find a matching shirt
+	- Put on a belt
+	- Put on shoes
+- Go downstairs to the kitchen
+- Make breakfast
+- Grab your lunch and walk out the door for work
