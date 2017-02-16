@@ -41,10 +41,12 @@ end
 
 decrypt(encrypt("swordfish"))
 
+#Driver Code
 #Ask the user if they want to create an encrypted or decrypt a password
 #Then ask for the password
 #Then decrypts or encrypts a password
 choice = ""
+#asks the user whether they want to decrypt or encrypt a password
   until choice == "Decrypt" || choice == "Encrypt"
     puts "Would you like to Decrypt or Encrypt a password?"
       choice = gets.chomp
