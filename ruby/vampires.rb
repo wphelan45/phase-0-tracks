@@ -43,6 +43,7 @@ puts "What allergies does " + name + " have? Enter done when finished."
 while allergies != "done" or "sunshine"
   if allergies == "sunshine"
     puts "Probably a vampire."
+#  break?
   else  
     puts "What other allergies does " + name + " have? Enter done when finished."
     allergies = gets.chomp
