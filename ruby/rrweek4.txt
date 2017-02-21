@@ -1,0 +1,32 @@
+1. A variable contains information that can be called and displayed.
+
+2. If variables are first_name=“Abraham” and last_name=“Lincoln.” Then the variable full_name= first_name + last_name will return “Abraham Lincoln.”
+
+3. string: A string is a word or sentence that will be returned when the console returns information. Ex. “2” will be returned as a string not an integer.
+integer: An integer is a whole number that can be added, subtracted, multiplied, and divided when in a formula with another integer. Ex. 2 will be returned as an integer not a string.
+float: A float is similar to an integer but has a decimal point after it. Ex. 2.0 is not an integer.
+nil: nil is the equivalent of nothing but represented as code.
+boolean: Always returns a true or false answer. Ex. 3 != 4 will return true because 3 is not equal to 4.
+
+4. An algorithm is an outline of the steps that need to be followed to solve a problem or perform a task. For example, an algorithm would break down the motions that go into picking up a glass of water for a robot arm.
+
+5. Two common types of algorithms are searching and sorting.
+
+6. A method is a framework for a system of operations in code. A programmer would use a method to define an operation, like when we created methods for encrypting and decrypting passwords in assignment 4.6.
+
+7. return value: displays a string, boolean, or integer after a method is run.
+side effect: a problem with a certain part of code from altering another part of the code.
+parameter: the limits that a method operates in.
+argument: the outside input a method accepts.
+implicit return: the value displayed in the console from the operations inside a method.
+
+8. A method scope only effects the variables or operation inside a method. Global scope effects the entire code. If you call a global variable you will be able to effect the return value of that variable using a method.
+
+9. Control flow is the technique of making sure your code is operable and will return the appropriate outputs. A programmer would use control flow to debug code.
+
+10. loop: makes code run over and over. Useful for running code over and over to check that processes are being run properly
+if: order of operations can be used to check multiple options when running code.
+else: the closing option to an if/else statement. 
+els if: used for running additional options in an if/else statement.
+while: makes code run while a process is occurring.
+until: makes code run until a desired amount of outputs have been achieved.
