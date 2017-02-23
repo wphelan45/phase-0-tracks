@@ -21,19 +21,19 @@ Ombre is:
 puts "INTERIOR DESIGNER JOB APPLICATION"
 
 application = {
-  name: "Will P",
-  address: "123 Road Ave.",
-  email: "will@email.com",
-  phone: "123-456-7890",
-  shade_blue: "Teal",
-  wall_paisley: "Paisley",
-  wall_chevrons: "Chevrons",
-  wall_photo_with: "Photorealistic woodsy scenes with squirrels",
-  wall_photo_without: "Photorealistic woodsy scenes without squirrels",
-  wall_abstract: "Abstract woodsy scenes (no squirrels)",
-  ombre_fierce: "Fierce",
-  ombre_season: "So last season",
-  ombre_medieval: "Practically medieval in its appalling irrelevance"
+  "name" => "Will P",
+  "address" => "123 Road Ave.",
+  "email" => "will@email.com",
+  "phone" => "123-456-7890",
+  "shade_blue" => "Teal",
+  "wall_paisley" => "Paisley",
+  "wall_chevrons" => "Chevrons",
+  "wall_photo_with" => "Photorealistic woodsy scenes with squirrels",
+  "wall_photo_with" => "Photorealistic woodsy scenes without squirrels",
+  "wall_abstract" => "Abstract woodsy scenes (no squirrels)",
+  "ombre_fierce" => "Fierce",
+  "ombre_season" => "So last season",
+  "ombre_medieval" => "Practically medieval in its appalling irrelevance"
 }
 
 p application[]

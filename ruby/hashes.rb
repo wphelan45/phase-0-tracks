@@ -1,33 +1,21 @@
 puts "INTERIOR DESIGNER JOB APPLICATION"
 
-puts "Full Name:"
-	name = gets.chomp
+wills_application = {
+  "Full Name" => "Will P",
+  "Address" => "123 Road St.",
+  "Email" => "will@email.com",
+  "Phone Number" => "123-456-7890",
+  "Fave shade of blue" => "Teal",
+  "Wallpaper" => "Paisley, Chevron and Abstract woodsy scenes."
+}
 
-puts "Address:"
-	address = gets.chomp
+p wills_application
 
-puts "Email:"
-	email = gets.chomp
-
-puts "Phone Number:"
-	phone = gets.chomp
-
-puts "Fave shade of blue:"
-	shade = gets.chomp
-
-puts "What are your wallpaper preferences from our catalog?"
-puts "Your choices are : Paisley, Chevrons, Photorealistic woodsy scenes with squirrels or without squirrels, and Abstract woodsy scenes (no squirrels). Enter all that apply. Type "done" when finished."
-	wallpaper = gets.chomp
-	until wallpaper == "Done"
-		wallpaper = gets.chomp
-		if wallpaper != "Paisley" or "Chevrons" or "Photorealistic woodsy scenes with squirrels" or "Photorealistic woodsy scenes without squirrels" or "Abstract woodsy scenes (no squirrels)"
-			puts "Sorry we don't carry that wallpaper. Your choices are : Paisley, Chevrons, Photorealistic woodsy scenes with squirrels or without squirrels, and Abstract woodsy scenes (no squirrels). Enter all that apply. Type "done" when finished."
-		end
-	end
-
-p name
-p address
-p email
-p phone
-p shade
-p wallpaper
+puts "Should we hire " + wills_application["Full Name"] + "?"
+    hire = gets.chomp
+puts "Would you like to add additional information to " + wills_application["Full Name"] + "'s profile?"
+    hadd = {
+      "add info" => gets.chomp
+    }
+p wills_application
+p hadd
