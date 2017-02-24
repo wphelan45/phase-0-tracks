@@ -14,3 +14,15 @@ while counter < array.length
 end
 end
 search_array(array, 90)
+
+def fib_array(n)
+  array = [0, 1]
+  counter = 0
+  while counter < (n - 2)
+    array.push(array[0 + counter] + array[1 + counter])
+    counter += 1
+  end
+  array
+end
+fib_array(6)
+fib_array(100)[-1] == 218922995834555169026
