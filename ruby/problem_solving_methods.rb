@@ -26,3 +26,33 @@ def fib_array(n)
 end
 fib_array(6)
 fib_array(100)[-1] == 218922995834555169026
+
+=begin
+Bubble Sort Algorithm Practice
+Goal: Integer sorting algorithm
+1. Create method that takes an array of integers as an argument
+2. Create a loop that will go through the array
+3. Want another loop that will go through the array and compare values
+4. Continue until nothing is swapped
+=end
+
+
+
+def bubsort(array)
+  n = array.length
+  loop do 
+    swapped = false
+    counter = 0 
+    until counter == n - 1
+      if array[0 + counter] > array[1 + counter]
+        array[0 + counter], array[1 + counter] = array[1 + counter], array[0 + counter]
+        swapped = true
+      end
+      counter += 1
+    end
+    break if swapped == false
+  end
+  array
+end
+
+p bubsort([10, 20, 8, 5, 2])
