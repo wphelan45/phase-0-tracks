@@ -1,0 +1,17 @@
+1. I can use data structures to store a lot of data and create a virtual infrastructure. Then, I can retrieve specific items from the infrastructure.
+
+2. An array is an index that stores information like, strings and integers. All arrays are zero indexed like all other normal strings and etc. This is useful because I can call specific positions from the array.
+
+3. Examples of datasets that arrays are good for storing are strings like: days of the week=[“Mon”, “Tues”, “Wed”]. animals=[“Lions”, “Tigers”, “Bears”].
+
+4. A hash is a dataset that is accessed by keys. The keys are created using a string and => string. The second string is the key.
+
+5. I made a hash dataset of animal exhibits at a zoo in assignment 5.4. Another useful dataset hashes are useful for are translator applications.
+
+6. Iteration is useful for retrieving information from arrays and hashes.
+
+7. Encrypting and decrypting passwords using hashes or arrays to jumble the data.
+
+8. A block is a section of code that can be used to retrieve information or define a method for use later.
+
+9. A block parameter is used to access information and is usually a variable that depends on the method that is being called.
