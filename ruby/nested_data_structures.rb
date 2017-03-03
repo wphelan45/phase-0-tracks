@@ -50,7 +50,7 @@ zoo = {
 }
 
 p zoo[:tiger_exhibit][:names][:sheer_khan]
-p zoo[:lion_exhibit][:names][:cubs].push(nero: "Nero")
+zoo[:lion_exhibit][:names][:cubs].push(nero: "Nero")
 p zoo[:lion_exhibit][:names][:cubs]
 p zoo[:gorilla_exhibit][:names][:harambe].reverse
 p zoo[:gorilla_exhibit][:capacity][:exhibit_capacity]
