@@ -41,8 +41,8 @@ end
 p alias_creator("Will", "Phelan")
 =end
 
-puts "What name would you like to change?"
-name = gets.chomp
+#puts "What name would you like to change?" -> Put this code last.
+#name = gets.chomp
 def change_name(name)
   name_array = name.chars
   p name_array
