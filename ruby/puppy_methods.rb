@@ -79,3 +79,6 @@ p timer_array
 timer_array.each {|x| p x.count_down}
 
 timer_array.each {|x| p x.count_up}
+
+
+
