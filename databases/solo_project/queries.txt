@@ -1,0 +1,53 @@
+Release 2:
+1.
+sqlite> SELECT * FROM common_bugs;                                                                                             1|Ant|12000|true|1
+2|Spider|46000|true|2
+3|Worm|1000000|false|3
+
+sqlite> SELECT * FROM taxonomy;
+1|INSECTA
+2|ARACHNIDA
+3|CLITELLATA
+
+2.
+sqlite> UPDATE common_bugs SET number_of_species=10000 WHERE name="Ant";
+sqlite> SELECT * FROM common_bugs;
+1|Ant|10000|true|1
+2|Spider|46000|true|2
+3|Worm|1000000|false|3
+
+3.
+sqlite> SELECT * FROM common_bugs, taxonomy WHERE common_bugs.type = taxonomy.id
+   ...> ;
+1|Ant|10000|true|1|1|INSECTA
+2|Spider|46000|true|2|2|ARACHNIDA
+3|Worm|1000000|false|3|3|CLITELLATA
+
+4.
+sqlite> SELECT common_bugs.type, taxonomy.class FROM common_bugs JOIN taxonomy ON common_bugs.type = taxonomy.id;
+1|INSECTA
+2|ARACHNIDA
+3|CLITELLATA
+
+5.
+sqlite> SELECT * FROM common_bugs;
+1|Ant|10000|true|1
+2|Spider|46000|true|2
+
+Release 3:
+Inner Join
+sqlite> SELECT common_bugs.id, taxonomy.id FROM common_bugs INNER JOIN taxonomy ON common_bugs.id=taxonomy.id;
+1|1
+2|2
+
+Simple Join
+-See Release 2 question 4.
+
+Full Join
+-Returns all rows when there is a match in one row of the tables.
+
+Right Join
+-Returns all rows from the right table and only the matched rows from the left table.
+
+Left Join
+--Returns all rows from the left table and only the matched rows from the right table.
