@@ -1,21 +1,23 @@
 puts "INTERIOR DESIGNER JOB APPLICATION"
 
-wills_application = {
-  "Full Name" => "Will P",
-  "Address" => "123 Road St.",
-  "Email" => "will@email.com",
-  "Phone Number" => "123-456-7890",
-  "Fave shade of blue" => "Teal",
-  "Wallpaper" => "Paisley, Chevron and Abstract woodsy scenes."
+application = {
+  :full_name => "Will P",
+  :address => "123 Road St.",
+  :email => "will@email.com",
+  :phone_number => "123-456-7890",
+  :fave_shade_of_blue => "Teal",
+  :wallpaper => "Paisley, Chevron and Abstract woodsy scenes."
 }
 
-p wills_application
+p application
 
 puts "Should we hire " + wills_application["Full Name"] + "?"
     hire = gets.chomp
+
 puts "Would you like to add additional information to " + wills_application["Full Name"] + "'s profile?"
     hadd = {
       "add info" => gets.chomp
     }
-p wills_application
+
+p application
 p hadd
