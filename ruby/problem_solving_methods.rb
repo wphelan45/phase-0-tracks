@@ -1,5 +1,5 @@
 #Create an Array
-array = [50, 60, 70, 80]
+array_to_search = [50, 60, 70, 80]
 #Define a method that calls array and an integer
 def search_array(array, n)
 #Create an if else to return the indexed value of the array Ex 50 returns 0
@@ -13,7 +13,7 @@ while counter < array.length
   counter += 1
 end
 end
-search_array(array, 90)
+search_array(array_to_search, 90)
 
 def fib_array(n)
   array = [0, 1]
@@ -24,8 +24,8 @@ def fib_array(n)
   end
   array
 end
-fib_array(6)
-fib_array(100)[-1] == 218922995834555169026
+p fib_array(6)
+p fib_array(100)[-1] == 218922995834555169026
 
 =begin
 Bubble Sort Algorithm Practice
