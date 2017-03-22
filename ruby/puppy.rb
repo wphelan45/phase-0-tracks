@@ -14,26 +14,27 @@ Behavior:
 =end
 
 class Puppy
-	Puppy.methods
+	
 end
 
 fido = Puppy.new
 dutchess = Puppy.new
 spot = Puppy.new
 
-spot.class
-dutchess == fido
-fido.instance_of?(Array)
-fido.instance_of?(Puppy)
+#Puppy.methods
+p spot
+p dutchess == fido
+p fido.instance_of?(Array)
+p fido.instance_of?(Puppy)
 #spot.play_dead
 
-=begin
+
+
 str = String.new
-str.length
-str.empty?
+p str.length
+p str.empty?
 str += "huh."
 str = "some string"
 greeting = String.new("hello")
-greeting.length
-greeting.upcase
-=end
+p greeting.length
+p greeting.upcase
