@@ -2,20 +2,18 @@ class Santa
   attr_reader :ethnicity
   attr_accessor :gender
   
-  def initialize
+	def initialize
 		puts "Initializing Santa instance ..."
-  end
-  
-  def gender
-    @gender = example_genders
-  end
-  
-  def ethnicity
-    @ethnicity = example_ethnicity
 	end
-end
-
-=begin  
+	  
+	def gender
+	    @gender = example_genders
+	end
+	  
+	def ethnicity
+	    @ethnicity = example_ethnicity
+	end
+  
 	def speak
 	 	p "Ho, ho, ho! Haaaappy holidays!"
 	end
@@ -25,22 +23,22 @@ end
 	end
 	
 	def age(a)
-	  @age = a
-	  if @age <= 0
-	    puts @age = "0"
-	  else
-	  puts "Santa #{@name} is #{@age}!"
-	  end
+		@age = a
+		if @age <= 0
+	    	puts @age = "0"
+		else
+			puts "Santa #{@name} is #{@age}!"
+		end
 	end
 	
 	def initialize(name, gender, ethnicity)
 		puts "Initializing Santa instance ..."
-    @name = name
-    @gender = gender
-    @ethnicity = ethnicity
+    	@name = name
+    	@gender = gender
+    	@ethnicity = ethnicity
 	end
 	
-  def reindeer_rank
+	def reindeer_rank
 	    @rd_rank = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 	    puts @rd_rank
 	end
@@ -48,14 +46,13 @@ end
 	def celebrate_birthday
 	    @age += 1
 	    puts "Congratulations! Santa #{@name} is now #{@age}."
-  end
+  	end
   
-  def get_mad_at(name)
-    @rd_rank.include?(name)
-    @rd_rank.delete(name)
-    puts @rd_rank.insert(-1, name)
-  end
-  
+  	def get_mad_at(name)
+  		@rd_rank = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+  		@rd_rank.delete(name)
+  		p @rd_rank.push(name)
+  	end
 end
 
 santa = Santa.new("Smith", "asexual", "Hispanic")
@@ -65,15 +62,14 @@ santa.age(40)
 santa.celebrate_birthday
 p santa.reindeer_rank
 santa.gender = "Female"
-#santa.get_mad_at(["Rudolph"])
+santa.get_mad_at("Rudolph")
 
 santa = Santa.new("Locke", "female", "Black")
 santa.speak
 santa.eat_milk_and_cookies("chocolate")
 santa.age(50)
 santa.celebrate_birthday
-#santa.get_mad_at(["Rudolph"])
-=end
+santa.get_mad_at("Dasher")
 
 new_santa = []
 
