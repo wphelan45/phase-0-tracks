@@ -8,11 +8,9 @@
 3. Run the code in IRB using: require_relative 'shout'
 4. Add a method for yelling angrily (code already exists in assignment 6.4)
 5. Add a method for yelling happily
-6. Run with driver code in IRB
-7. 
+6. Run with driver code
 =end
 
-=begin
 module Shout
 	def self.yell_angrily(words)
 		words + "!!! :("
@@ -25,7 +23,7 @@ end
 
 p Shout.yell_angrily("Get over here")
 p Shout.yell_happily("Welcome back")
-=end
+
 
 module Shout
 	def yell(words)
