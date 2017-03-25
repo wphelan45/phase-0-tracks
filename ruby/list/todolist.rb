@@ -33,9 +33,11 @@ class TodoList
   end
 end
 
-#p TodoList.new.get_items([@dishes, @lawn])
+=begin
+p TodoList.new.get_items([@dishes, @lawn])
 p test_instance = TodoList.new(["do the dishes", "mow the lawn"])
 p test_instance.get_items
 p test_instance.add_item("mop")
 p test_instance.delete_item("mow the lawn")
 p test_instance.get_item(0)
+=end
