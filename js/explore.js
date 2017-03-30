@@ -5,7 +5,7 @@
 //		-Create a new array to store the newly reversed string
 // 3. Call the method and debug if necessary
 
-var string = "em esrever"
+var string = "gnirts siht esrever"
 
 function reverse(s) {
 	reverse_array = [];
