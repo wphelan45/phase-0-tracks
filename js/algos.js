@@ -1,3 +1,4 @@
+//Release 0
 // Algorithm for a function that returns the longest string
 // 1. Create an array with 3 strings.
 // 2. Create a function that takes the array and make sure it returns the longest string.
@@ -27,59 +28,33 @@ console.log(long_in_array(test2));
 var test3 = ["Soccer", "Basketball", "Baseball", "Hockey"]
 console.log(long_in_array(test3));
 
-/* Release 1
-Design a function that checks if two object share a key-value pair
-1. Name a function and give it two parameters
-2. Write an if/else statement that returns true or false
-3. Make sure you don't compare the prperty's string
-4. Test with driver code*/
+//Release 1
+test_hash1 = {name: "Steven", age: 54}
+test_hash2 = {name: "Tamir", age: 54}
 
-function create_array(object) {
-	var array = (Object.keys(object).map(function(e) {
-		return [Number(e), object[e]];
-	})
+function compare_hashes(h1, h2){
+	var obj = {h1, h2}
+	for (var i = 0; i < obj.length; i++){
+		if(h1.values(h1) == h2.values(h2))
+			return obj.values(h1), obj.values(h2)
+	}
+	return obj
 }
 
-function key_compare(key, key2) {
-	var key_array = key.slice(0, -1);
-	var key_array2 = key2.slice(0, -1);
-	for (var i = 0; i < key_array.length; i++) {
-		for (var x = 0; x < key_array2.length; x++) {
-			if ((key_array[1] == key_array2[1]) || (key_array[3] == key_array2[3])) {
-				console.log("true");
-			}
-			else {
-				console.log(false);
-				}
-			}
-		}
-	};
+console.log(compare_hashes(test_hash1, test_hash2));
 
-hash = {name: "Steven", age: 54};
-hash2 = {name: "Tamir", age: 54};
-console.log(create_array(key_compare(hash, hash2)));
-
-/*
-1. Create a function that takes a string and returns an array of strings with equal length
-2. Figure out how to make the function return random strings of varying lengths
-3. Test with driver code
-*/
-
-function integer_to_string(int) {
-	var text = "";
-    var possible = "abcdefghijklmnopqrstuvwxyz";
-	var array = [];
-	for (var i = 0; i < someText.length; i++) {
-    	if (someText[i] === myWord[0]) {
-        	for (var j = i; j < someText[i] + myWord.length; j++) {
-            	hits = [];
-            	hits.push("text");
-            	hits[0];
-		for( var i=0; i < 5; i++ )
-        	text += possible.charAt(Math.floor(Math.random() * possible.length));
-    	return text;
-		}
+//Release 2
+function build_string(integer){
+	var alphabet = "abcdefghijklmnopqrstuvwxyz"
+	var string_length = integer
+	var string = alphabet.raw
+	for (var i = 0; i < string_length; i++){
+		console.log(alphabet.random(integer))
 	}
-};
+	return string;
+}
 
-console.log(integer_to_string(3));
+console.log(build_string(3));
+
+
+
