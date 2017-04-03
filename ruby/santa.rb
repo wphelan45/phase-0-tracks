@@ -1,6 +1,6 @@
 class Santa
-  attr_reader :ethnicity
-  attr_accessor :gender
+  attr_reader :ethnicity, :age
+  attr_accessor :gender, :ethnicity, :rd_rank
   
 	def initialize
 		puts "Initializing Santa instance ..."

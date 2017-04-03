@@ -1,3 +1,4 @@
+=begin
 INTERIOR DESIGNER JOB APPLICATION
 
 Name: __________________________________________
@@ -17,6 +18,7 @@ Ombre is:
 ◯ Fierce
 ◯ So last season
 ◯ Practically medieval in its appalling irrelevance
+=end
 
 puts "INTERIOR DESIGNER JOB APPLICATION"
 
@@ -36,4 +38,4 @@ application = {
   "ombre_medieval" => "Practically medieval in its appalling irrelevance"
 }
 
-p application[]
+p application["name"]
