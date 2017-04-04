@@ -1,47 +1,62 @@
 Release 2:
-1.
-sqlite> SELECT * FROM common_bugs;                                                                                             1|Ant|12000|true|1
-2|Spider|46000|true|2
-3|Worm|1000000|false|3
+1. sqlite> SELECT * FROM squad;                                                                                             
+Whiporwill|true|1
+Snakedoctor|false|2
+dirtdiver|true|3
+Bettyblue|false|4
+Jocko|true|5
+Joe|true|6
 
-sqlite> SELECT * FROM taxonomy;
-1|INSECTA
-2|ARACHNIDA
-3|CLITELLATA
+sqlite> SELECT * FROM rank;
+1|Sergeant
+2|Corporal
+3|Specialist
+4|Private First Class
+5|Private 2
+6|Private
 
-2.
-sqlite> UPDATE common_bugs SET number_of_species=10000 WHERE name="Ant";
-sqlite> SELECT * FROM common_bugs;
-1|Ant|10000|true|1
-2|Spider|46000|true|2
-3|Worm|1000000|false|3
+2. sqlite> UPDATE squad SET rank=1 WHERE name="Joe";
+sqlite> SELECT * FROM squad;
+Whiporwill|true|1
+Snakedoctor|false|2
+dirtdiver|true|3
+Bettyblue|false|4
+Jocko|true|5
+Joe|true|1
 
-3.
-sqlite> SELECT * FROM common_bugs, taxonomy WHERE common_bugs.type = taxonomy.id
-   ...> ;
-1|Ant|10000|true|1|1|INSECTA
-2|Spider|46000|true|2|2|ARACHNIDA
-3|Worm|1000000|false|3|3|CLITELLATA
+3. sqlite> SELECT * FROM squad, rank WHERE squad.rank = rank.rank_id;
+Whiporwill|true|1|1|Sergeant
+Snakedoctor|false|2|2|Corporal
+dirtdiver|true|3|3|Specialist
+Bettyblue|false|4|4|Private First Class
+Jocko|true|5|5|Private 2
+Joe|true|1|1|Sergeant
 
-4.
-sqlite> SELECT common_bugs.type, taxonomy.class FROM common_bugs JOIN taxonomy ON common_bugs.type = taxonomy.id;
-1|INSECTA
-2|ARACHNIDA
-3|CLITELLATA
+4. sqlite>  SELECT squad.name, rank.rank_name FROM squad JOIN rank ON squad.rank = rank.rank_id;
+Whiporwill|Sergeant
+Snakedoctor|Corporal
+dirtdiver|Specialist
+Bettyblue|Private First Class
+Jocko|Private 2
+Joe|Sergeant
 
-5.
-sqlite> SELECT * FROM common_bugs;
-1|Ant|10000|true|1
-2|Spider|46000|true|2
+5. sqlite> DELETE FROM squad
+   ...> WHERE name="Joe";
+sqlite> SELECT * FROM squad;
+Whiporwill|true|1
+Snakedoctor|false|2
+dirtdiver|true|3
+Bettyblue|false|4
+Jocko|true|5
 
 Release 3:
 Inner Join
-sqlite> SELECT common_bugs.id, taxonomy.id FROM common_bugs INNER JOIN taxonomy ON common_bugs.id=taxonomy.id;
+sqlite> SELECT squad.rank, rank.rank_id FROM squad INNER JOIN rank ON squad.rank=rank.rank_id;
 1|1
 2|2
 
 Simple Join
--See Release 2 question 4.
+ sqlite>  SELECT squad.name, rank.rank_name FROM squad JOIN rank ON squad.rank = rank.rank_id;
 
 Full Join
 -Returns all rows when there is a match in one row of the tables.
