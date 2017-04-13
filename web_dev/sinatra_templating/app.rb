@@ -17,6 +17,16 @@ get '/students/new' do
   erb :new_student
 end
 
+get '/campuses' do
+	@campuses = db.execute("select campus, count(campus) from students group by campus")
+	@new_campus = db.execute("select * from campuses")
+	erb :campus
+end
+
+get '/campus/new' do
+	erb :new_campus
+end
+
 # create new students via
 # a form
 post '/students' do
@@ -24,4 +34,20 @@ post '/students' do
   redirect '/'
 end
 
+post '/campus' do
+	db.execute("INSERT INTO campuses (name, city) VALUES (?,?)", [params['name'], params['city']])
+	redirect '/campuses'
+end
+
 # add static resources
+
+
+
+
+
+
+
+
+
+
+
